@@ -17,3 +17,7 @@ RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install mbstring
 
 RUN docker-php-ext-install tokenizer
+
+RUN rm -rf /var/cache/apk/*
+
+RUN apk -v cache clean

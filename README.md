@@ -10,7 +10,7 @@
 
 # Get the image
 
-The recommended way to get the eteplus PHP-FPM-Alpine Docker Image is to pull the prebuilt image from the [Docker Hub Registry](https://hub.docker.com/r/eteplus/php7-fpm-alpine) or [Dao Cloud](https://daocloud.io/eteplus/php7-fpm-alpine).
+The recommended way to get the eteplus PHP-FPM-Alpine Docker Image is to pull the prebuilt image from the [Docker Hub Registry](https://hub.docker.com/r/eteplus/php7-fpm-alpine)
 
 ```bash
 docker pull eteplus/php-fpm-alpine:latest
