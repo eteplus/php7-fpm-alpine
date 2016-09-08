@@ -6,18 +6,11 @@ RUN docker-php-source extract && \
   apk add --update --no-cache autoconf g++ make && \
   pecl install redis && \
   docker-php-ext-enable redis && \
+  docker-php-ext-install mysqli && \
+  docker-php-ext-install pdo && \
+  docker-php-ext-install pdo_mysql && \
+  docker-php-ext-install mbstring && \
+  docker-php-ext-install tokenizer && \
   docker-php-source delete
 
-RUN docker-php-ext-install mysqli
-
-RUN docker-php-ext-install pdo
-
-RUN docker-php-ext-install pdo_mysql
-
-RUN docker-php-ext-install mbstring
-
-RUN docker-php-ext-install tokenizer
-
 RUN rm -rf /var/cache/apk/*
-
-RUN apk -v cache clean
